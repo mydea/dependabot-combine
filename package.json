@@ -8,8 +8,7 @@
   "private": false,
   "type": "module",
   "bin": {
-    "dependabot-combine": "./bin/dependabot-combine.js",
-    "dc": "./bin/dependabot-combine.js"
+    "dependabot-combine": "./bin/dependabot-combine.js"
   },
   "directories": {
     "bin": "./bin",
@@ -18,7 +17,17 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "commander": "^9.3.0",
-    "simple-git": "^3.7.1"
+    "minimatch": "^5.1.0",
+    "simple-git": "^3.7.1",
+    "yarn-update-dependency": "0.7.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "eslint": "^8.16.0",
+    "fabscale-eslint-config": "^1.4.0",
+    "prettier": "^2.6.2",
+    "release-it": "^15.0.0",
+    "release-it-lerna-changelog": "^4.0.1"
   },
   "engines": {
     "node": ">= 16"
@@ -26,5 +35,18 @@
   "volta": {
     "node": "16.15.1",
     "yarn": "1.22.18"
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md"
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true
+    }
   }
 }
