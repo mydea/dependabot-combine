@@ -1,0 +1,30 @@
+{
+  "name": "dependabot-combine",
+  "version": "1.0.0",
+  "description": "Combine dependabot PRs into a single branch.",
+  "main": "lib/index.js",
+  "author": "Francesco Novy <francesconovy@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "bin": {
+    "dependabot-combine": "./bin/dependabot-combine.js",
+    "dc": "./bin/dependabot-combine.js"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.3.0",
+    "simple-git": "^3.7.1"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "volta": {
+    "node": "16.15.1",
+    "yarn": "1.22.18"
+  }
+}
