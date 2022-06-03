@@ -20,6 +20,10 @@
     "./lib": "./lib/index.js",
     "./lib/*": "./lib/*.js"
   },
+  "scripts": {
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix"
+  },
   "dependencies": {
     "chalk": "^5.0.1",
     "commander": "^9.3.0",
