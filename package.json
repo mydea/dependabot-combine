@@ -4,6 +4,7 @@
   "description": "Combine dependabot PRs into a single branch.",
   "main": "lib/index.js",
   "author": "Francesco Novy <francesconovy@gmail.com>",
+  "repository": "https://github.com/mydea/dependabot-combine",
   "license": "MIT",
   "private": false,
   "type": "module",
