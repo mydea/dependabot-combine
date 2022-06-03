@@ -1,6 +1,6 @@
 {
   "name": "dependabot-combine",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Combine dependabot PRs into a single branch.",
   "main": "lib/index.js",
   "author": "Francesco Novy <francesconovy@gmail.com>",
